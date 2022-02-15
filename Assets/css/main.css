@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body {
+  background-color: #20b2aa;
+}
+
+.container {
+  padding: 100px;
+}
+
+.header_info {
+  text-align: center;
+}
+
+.header_info-img {
+  image-rendering: pixelated;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 2px #999);
+}
+
+.header_info-name {
+  font-family: charm;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.header_info-content {
+  font-family: Alegreya Sans;
+  padding: 0 320px 0 320px;
+  color: #fff;
+  letter-spacing: 0.2px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.header_info-list {
+  padding-top: 6px;
+}
+.header_info-item {
+  list-style-type: none;
+  margin: 12px 0 12px 0;
+  display: flex;
+  justify-content: center;
+}
+.header_info-link {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px;
+  width: 220px;
+  border-radius: 20px;
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header_info-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.header_info-link:hover i {
+  color: #fff;
+}
+
+.header_info-link i {
+  font-size: 16px;
+  color: #000;
+  padding: 4px 6px 4px 6px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* mobile & tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header_info-content {
+    font-family: Alegreya Sans;
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  .header_info-link:hover {
+    background-color: none;
+    color: none;
+  }
+
+  .header_info-link:hover i {
+    color: none;
+  }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  .container {
+    padding: 90px 12px 0 12px;
+  }
+
+  .header_info-link:hover {
+    background-color: none;
+    color: none;
+  }
+
+  .header_info-link:hover i {
+    color: none;
+  }
+
+  .header_info-content {
+    font-family: Alegreya Sans;
+    padding: 0 6px 0 6px;
+    text-align: center;
+  }
+}
